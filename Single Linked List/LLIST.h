@@ -2,7 +2,7 @@
  * LLIST.h
  *
  *  Created on: 15-Feb-2018
- *      Author: Raghvendra
+ *      Author: Raghvendra Dixit
  */
 
 #ifndef SINGLE_LINKED_LIST_LLIST_H_
