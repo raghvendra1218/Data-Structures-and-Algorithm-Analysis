@@ -1,7 +1,7 @@
 /*
 main.cpp
 20-Feb-2018
-Raghvendra
+Raghvendra Dixit
 */
 #include <iostream>
 #include "DLLIST.h"

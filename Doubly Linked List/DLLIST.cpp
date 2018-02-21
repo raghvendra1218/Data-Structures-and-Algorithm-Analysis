@@ -1,7 +1,7 @@
 /*
 DLLIST.cpp
 19-Feb-2018
-Raghvendra
+Raghvendra Dixit
 */
 #include <iostream>
 #include <cstdlib>

@@ -2,7 +2,7 @@
  * DLLIST.h
  *
  *  Created on: 19-Feb-2018
- *      Author: Raghvendra
+ *      Author: Raghvendra Dixit
  */
 
 #ifndef DOUBLY_LINKED_LIST_DLLIST_H_
