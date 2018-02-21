@@ -32,6 +32,7 @@ void List::addNode(int addData){
 			curr = curr->next;
 		}
 		curr->next = n;
+		n->next = nullptr;
 	} else {
 		head = n;
 	}
