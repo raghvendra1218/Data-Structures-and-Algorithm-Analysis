@@ -13,7 +13,7 @@ int main()
 	BST tree;
 	cout<<"Printing the Tree inorder, before adding numbers"<<endl;
 	tree.printInorder();
-	for(int i =0; i<16; i++){
+	for(int i =0; i< (sizeof(keys)/sizeof(keys[0])); i++){
 		tree.addLeaf(keys[i]);
 	}
 	cout<<"Printing the Tree inorder, after adding numbers"<<endl;
