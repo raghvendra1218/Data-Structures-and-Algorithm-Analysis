@@ -21,12 +21,14 @@ private:
 	void addPrivateLeaf(int addData, nodePtr n);
 	void printInorderPrivate(nodePtr n);
 	void printPostorderPrivate(nodePtr n);
+	void printPreorderPrivate(nodePtr n);
 public:
 	BST();
 	void addLeaf(int addData);
 	void printInorder();
 	void delData();
 	void printPostorder();
+	void printPreorder();
 };
 
 

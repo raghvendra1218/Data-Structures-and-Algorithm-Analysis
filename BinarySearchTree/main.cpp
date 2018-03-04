@@ -13,14 +13,18 @@ int main()
 	BST tree;
 //	cout<<"Printing the Tree inorder, before adding numbers"<<endl;
 //	tree.printInorder();
-	cout<<"Printing the Tree postorder, before adding numbers"<<endl;
-	tree.printPostorder();
+//	cout<<"Printing the Tree postorder, before adding numbers"<<endl;
+//	tree.printPostorder();
+	cout<<"Printing the Tree preorder, before adding numbers"<<endl;
+	tree.printPreorder();
 	for(int i =0; i< (sizeof(keys)/sizeof(keys[0])); i++){
 		tree.addLeaf(keys[i]);
 	}
 //	cout<<"Printing the Tree inorder, after adding numbers"<<endl;
 //	tree.printInorder();
-	cout<<"Printing the Tree postorder, before adding numbers"<<endl;
-	tree.printPostorder();
+//	cout<<"Printing the Tree postorder, after adding numbers"<<endl;
+//	tree.printPostorder();
+	cout<<"Printing the Tree preorder, after adding numbers"<<endl;
+	tree.printPreorder();
 return 0;
 }
