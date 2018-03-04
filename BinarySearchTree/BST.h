@@ -22,7 +22,7 @@ private:
 	void printInorderPrivate(nodePtr n);   //will print the left->root->right
 	void printPostorderPrivate(nodePtr n); //will print the left->right->root
 	void printPreorderPrivate(nodePtr n); // will print the root->left->right
-	nodePtr returnNode(int data);
+	nodePtr returnNode(int data); // helper function
 	nodePtr returnNodePrivate(int data, nodePtr n);
 public:
 	BST();
@@ -32,6 +32,9 @@ public:
 	void printPostorder();
 	void printPreorder();
 	void search(int data);
+	void printChildren(int data);
+	int returnRootKey();   //Helper function just to get the data inside the root
+
 };
 
 

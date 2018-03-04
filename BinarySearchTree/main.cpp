@@ -25,7 +25,12 @@ int main()
 //	cout<<"Printing the Tree postorder, after adding numbers"<<endl;
 //	tree.printPostorder();
 	cout<<"Printing the Tree preorder, after adding numbers"<<endl;
-	tree.printPreorder();
-	tree.search(52);
+//	tree.printPreorder();
+//	tree.search(52);
+//	tree.printChildren(tree.returnRootKey());
+	//Printing each and every parent-child relationship in the tree
+	for(int i =0; i< (sizeof(keys)/sizeof(keys[0])); i++){
+		tree.printChildren(keys[i]);
+	}
 return 0;
 }

@@ -120,4 +120,24 @@ BST::nodePtr BST::returnNodePrivate(int data, nodePtr n) {
 		return nullptr;
 	}
 }
-
+int BST::returnRootKey(){
+	if(root!=nullptr){
+		return root->data;
+	} else {
+		return -1000; //As we do not have negative number we are just doing a work around
+	}
+}
+void BST::printChildren(int data){
+	nodePtr current = returnNode(data);
+	if(current != nullptr){
+		cout<<"Parent Node = "<<current->data<<endl;
+		current->left != nullptr ?
+		cout<<"Left Child = "<<current->left->data<<endl :
+		cout<<"Left Child = "<<"NULL"<<endl;
+		current->right != nullptr ?
+		cout<<"Right Child = "<<current->right->data<<endl :
+		cout<<"Right Child = "<<"NULL"<<endl;
+	} else {
+		cout<<"Data "<<data<<" is not present in the tree"<<endl;
+	}
+}
