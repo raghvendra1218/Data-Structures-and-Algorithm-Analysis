@@ -92,4 +92,32 @@ void BST::printPreorderPrivate(nodePtr n) {
 		cout<<"********************"<<endl;
 	}
 }
+void BST::search(int data) {
+	nodePtr searchedData;
+	searchedData = returnNode(data);
+	cout<<endl;
+	if(searchedData != nullptr && searchedData->data == data) {
+		cout<<data<<" Data found in the List"<<endl;
+	} else {
+		cout<<"Data not found"<<endl;
+	}
+}
+BST::nodePtr BST::returnNode(int data) {
+	return returnNodePrivate(data, root);
+}
+BST::nodePtr BST::returnNodePrivate(int data, nodePtr n) {
+	if(n != nullptr){
+		if(data == n->data){
+			return n;
+		} else {
+			if(data < n->data){
+				return returnNodePrivate(data, n->left);
+			} else {
+				return returnNodePrivate(data, n->right);
+			}
+		}
+	} else {
+		return nullptr;
+	}
+}
 

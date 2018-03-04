@@ -26,5 +26,6 @@ int main()
 //	tree.printPostorder();
 	cout<<"Printing the Tree preorder, after adding numbers"<<endl;
 	tree.printPreorder();
+	tree.search(52);
 return 0;
 }

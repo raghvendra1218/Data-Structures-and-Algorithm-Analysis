@@ -22,6 +22,8 @@ private:
 	void printInorderPrivate(nodePtr n);   //will print the left->root->right
 	void printPostorderPrivate(nodePtr n); //will print the left->right->root
 	void printPreorderPrivate(nodePtr n); // will print the root->left->right
+	nodePtr returnNode(int data);
+	nodePtr returnNodePrivate(int data, nodePtr n);
 public:
 	BST();
 	void addLeaf(int addData);
@@ -29,6 +31,7 @@ public:
 	void delData();
 	void printPostorder();
 	void printPreorder();
+	void search(int data);
 };
 
 
