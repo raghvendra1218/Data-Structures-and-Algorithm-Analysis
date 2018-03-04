@@ -57,4 +57,22 @@ void BST::printInorderPrivate(nodePtr n){
 		cout<<"********************"<<endl;
 	}
 }
+void BST::printPostorder() {
+	printPostorderPrivate(root);
+}
+
+void BST::printPostorderPrivate( nodePtr n){
+	if(root != nullptr) {
+		if(n->left != nullptr) {
+			printPostorderPrivate(n->left);
+		}
+		if(n->right != nullptr){
+			printPostorderPrivate(n->right);
+		}
+		cout<<n->data<<" ";
+	} else {
+		cout<<"Tree is empty"<<endl;
+		cout<<"********************"<<endl;
+	}
+}
 
