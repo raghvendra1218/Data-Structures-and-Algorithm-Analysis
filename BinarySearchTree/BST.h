@@ -19,9 +19,9 @@ private:
 	nodePtr root;
 	nodePtr createLeaf(int addData);
 	void addPrivateLeaf(int addData, nodePtr n);
-	void printInorderPrivate(nodePtr n);
-	void printPostorderPrivate(nodePtr n);
-	void printPreorderPrivate(nodePtr n);
+	void printInorderPrivate(nodePtr n);   //will print the left->root->right
+	void printPostorderPrivate(nodePtr n); //will print the left->right->root
+	void printPreorderPrivate(nodePtr n); // will print the root->left->right
 public:
 	BST();
 	void addLeaf(int addData);
