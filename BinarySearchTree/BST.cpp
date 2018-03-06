@@ -141,3 +141,33 @@ void BST::printChildren(int data){
 		cout<<"Data "<<data<<" is not present in the tree"<<endl;
 	}
 }
+int BST::returnSmallestValue() {
+	return returnSmallestValuePrivate(root);
+}
+int BST::returnSmallestValuePrivate(nodePtr n) {
+	if(root != nullptr){
+		if(n->left != nullptr){
+			return returnSmallestValuePrivate(n->left);
+		} else {
+			return n->data;
+		}
+	} else {
+		cout<<"The tree is empty"<<endl;
+		return -1000;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

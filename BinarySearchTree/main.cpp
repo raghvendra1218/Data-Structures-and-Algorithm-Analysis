@@ -25,12 +25,15 @@ int main()
 //	cout<<"Printing the Tree postorder, after adding numbers"<<endl;
 //	tree.printPostorder();
 	cout<<"Printing the Tree preorder, after adding numbers"<<endl;
-//	tree.printPreorder();
+	tree.printPreorder();
 //	tree.search(52);
-//	tree.printChildren(tree.returnRootKey());
-	//Printing each and every parent-child relationship in the tree
+	tree.printChildren(tree.returnRootKey());
+//	Printing each and every parent-child relationship in the tree
 	for(int i =0; i< (sizeof(keys)/sizeof(keys[0])); i++){
 		tree.printChildren(keys[i]);
 	}
+//	int smallest = tree.returnSmallestValue();
+//	cout<<endl;
+//	cout<<"Sammlest value in the tree is "<<smallest<<endl;
 return 0;
 }

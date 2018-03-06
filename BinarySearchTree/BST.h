@@ -24,6 +24,7 @@ private:
 	void printPreorderPrivate(nodePtr n); // will print the root->left->right
 	nodePtr returnNode(int data); // helper function
 	nodePtr returnNodePrivate(int data, nodePtr n);
+	int returnSmallestValuePrivate(nodePtr n);
 public:
 	BST();
 	void addLeaf(int addData);
@@ -34,6 +35,7 @@ public:
 	void search(int data);
 	void printChildren(int data);
 	int returnRootKey();   //Helper function just to get the data inside the root
+	int returnSmallestValue();
 
 };
 
