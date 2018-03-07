@@ -3,9 +3,10 @@ Stack.cpp
 06-Mar-2018
 Raghvendra Dixit
 */
+#include "../DSArchive/Stack_Implementation/Stack.h"
+
 #include <iostream>
 #include <string>
-#include "Stack.h"
 
 using namespace std;
 

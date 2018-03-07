@@ -5,8 +5,8 @@
  *      Author: Raghvendra
  */
 
-#ifndef STACK_H_
-#define STACK_H_
+#ifndef STACK_IMPLEMENTATION_STACK_H_
+#define STACK_IMPLEMENTATION_STACK_H_
 # include<string>
 using namespace std;
 class Stack {
@@ -27,4 +27,4 @@ public:
 	~Stack();
 };
 
-#endif /* STACK_H_ */
+#endif /* STACK_IMPLEMENTATION_STACK_H_ */

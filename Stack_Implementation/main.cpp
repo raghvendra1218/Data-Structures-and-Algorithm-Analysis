@@ -4,7 +4,8 @@ main.cpp
 Raghvendra Dixit
 */
 #include <iostream>
-#include "Stack.h"
+
+#include "../DSArchive/Stack_Implementation/Stack.h"
 using namespace std;
 
 int main()
@@ -17,7 +18,6 @@ int main()
 	myStack.Push("Vinayak", 28);
 	myStack.Print();
 	cout<<"Popping an item"<<endl;
-	myStack.Pop();
 	myStack.Pop();
 	myStack.Pop();
 	myStack.Pop();
