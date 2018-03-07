@@ -36,3 +36,32 @@ void Stack::Push(string name, int value) {
 		stackPtr->prev = nullptr;
 	}
 }
+void Stack::readItem(itemPtr r){
+	cout<<"--------------------\n";
+	cout<<"name : "<<r->name<<endl;
+	cout<<"value: "<<r->value<<endl;
+	cout<<"--------------------\n";
+}
+void Stack::Pop() {
+	if(stackPtr != nullptr){
+		itemPtr p;
+		p = stackPtr;
+		readItem(p);
+		stackPtr = stackPtr->prev;
+		p->prev = nullptr;
+		delete p;
+	} else {
+		cout<<"Stack is empty.\n";
+	}
+}
+void Stack::Print() {
+	if(stackPtr!= nullptr){
+		itemPtr p = stackPtr;
+		while(p != nullptr) {
+			readItem(p);
+			p = p->prev;
+		}
+	} else {
+		cout<<"Stack is empty.\n";
+	}
+}
