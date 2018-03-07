@@ -4,3 +4,4 @@ Data Structure problems.
 - Doubly Linked List
 - Binary Search Tree
 - singly Linked List Recursive Search
+- Stack Implementation
