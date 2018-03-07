@@ -5,8 +5,8 @@
  *      Author: Raghvendra
  */
 
-#ifndef BST_H_
-#define BST_H_
+#ifndef BINARYSEARCHTREE_BST_H_
+#define BINARYSEARCHTREE_BST_H_
 
 class BST {
 private:
@@ -40,4 +40,4 @@ public:
 };
 
 
-#endif /* BST_H_ */
+#endif /* BINARYSEARCHTREE_BST_H_ */

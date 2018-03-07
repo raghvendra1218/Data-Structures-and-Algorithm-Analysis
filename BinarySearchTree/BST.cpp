@@ -3,8 +3,9 @@ BST.cpp
 21-Feb-2018
 Raghvendra Dixit
 */
+#include "../DSArchive/BinarySearchTree/BST.h"
+
 #include <iostream>
-#include "BST.h"
 
 using namespace std;
 

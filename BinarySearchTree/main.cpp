@@ -4,7 +4,8 @@ main.cpp
 Raghvendra Dixit
 */
 #include <iostream>
-#include "BST.h"
+
+#include "../DSArchive/BinarySearchTree/BST.h"
 using namespace std;
 int main()
 {
