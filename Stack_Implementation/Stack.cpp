@@ -24,5 +24,15 @@ Stack::~Stack() {
 	}
 }
 void Stack::Push(string name, int value) {
-
+	itemPtr n = new item;
+	n->name = name;
+	n->value = value;
+//	n->prev = nullptr;
+	if(stackPtr != nullptr){
+		n->prev = stackPtr;
+		stackPtr = n;
+	} else {
+		stackPtr = n;
+		stackPtr->prev = nullptr;
+	}
 }
